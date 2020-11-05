@@ -25,16 +25,18 @@ public class Logintest extends BaseTestClass {
 	 */
 
 	@Test(priority = 1)
-	public void logintest() throws InterruptedException {
+	public void logintest() {
 		invokeBrowser("chrome");
-		openwebsite();
-		logger = report.createTest("Login test");
-		login = landingpage.clicksignin(prop.getProperty("uname"), prop.getProperty("pwd"));
-		// logger.log(Status.PASS, "User logged in");
-		coffeepage = landingpage.clickcoffeelink();
-		landingpage = coffeepage.hoverlinks();
-		search = coffeepage.clickonsearch();
-		search = search.searchitem();
+		OpenApplication();
+		// logger = report.createTest("Login test");
+		// login = landingpage.clicksignin();
+		coffeepage = login.dologin(prop.getProperty("uname"), prop.getProperty("pwd"));
+
+		// coffeepage = login.dologin();
+		// coffeepage = landingpage.clickcoffeelink();
+		// landingpage = coffeepage.hoverlinks();
+		// search = coffeepage.clickonsearch();
+		// search = search.searchitem();
 		// Loginpage loginpage = landingpage.clicksignin();
 		// Coffeepage cofeepage = loginpage.dologin();
 	}

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 02 15:38:12 IST 2020</td>
+<td>Started on:</td><td>Thu Nov 05 15:54:55 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18167 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15016 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,11 +76,8 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Testcases.Logintest.logintest()'><b>logintest</b><br>Test class: Testcases.Logintest</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.InstantiationException: com.qa.pages.Landingpage
-	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:134)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
-	at com.Base.BaseTestClass.openwebsite(BaseTestClass.java:121)
-	at Testcases.Logintest.logintest(Logintest.java:30)
+<td><div><pre>java.lang.NullPointerException
+	at Testcases.Logintest.logintest(Logintest.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,20 +106,9 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.InstantiationException: com.qa.pages.Landingpage
-	at java.base/java.lang.Class.newInstance(Class.java:598)
-	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:131)
-	... 31 more
-Caused by: java.lang.NoSuchMethodException: com.qa.pages.Landingpage.&lt;init&gt;()
-	at java.base/java.lang.Class.getConstructor0(Class.java:3427)
-	at java.base/java.lang.Class.newInstance(Class.java:585)
-	... 32 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1690233783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1690233783'><pre>java.lang.RuntimeException: java.lang.InstantiationException: com.qa.pages.Landingpage
-	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:134)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
-	at com.Base.BaseTestClass.openwebsite(BaseTestClass.java:121)
-	at Testcases.Logintest.logintest(Logintest.java:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1230013344", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1230013344'><pre>java.lang.NullPointerException
+	at Testcases.Logintest.logintest(Logintest.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -151,17 +137,9 @@ Caused by: java.lang.NoSuchMethodException: com.qa.pages.Landingpage.&lt;init&gt
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.InstantiationException: com.qa.pages.Landingpage
-	at java.base/java.lang.Class.newInstance(Class.java:598)
-	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:131)
-	... 31 more
-Caused by: java.lang.NoSuchMethodException: com.qa.pages.Landingpage.&lt;init&gt;()
-	at java.base/java.lang.Class.getConstructor0(Class.java:3427)
-	at java.base/java.lang.Class.newInstance(Class.java:585)
-	... 32 more
 </pre></div></td>
-<td>13</td>
-<td>Testcases.Logintest@49438269</td></tr>
+<td>10</td>
+<td>Testcases.Logintest@367ffa75</td></tr>
 </table><p>
 </body>
 </html>

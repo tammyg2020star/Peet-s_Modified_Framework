@@ -27,9 +27,9 @@ public class testutil extends pagebaseclass {
 	 * @param test
 	 */
 	public testutil(WebDriver driver, ExtentTest logger) {
-		super(driver, logger);
-		// TODO Auto-generated constructor stub
+		this.driver = driver;
 	}
+	// TODO Auto-generated constructor stub
 
 	// this is insted of giving the timeout in baseclass, we can give here and call
 	// that in base class

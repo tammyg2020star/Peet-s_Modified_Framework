@@ -11,7 +11,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.Base.pagebaseclass;
-import com.aventstack.extentreports.ExtentTest;
 
 /**
  * @author Thimmegowda
@@ -37,8 +36,13 @@ public class Coffeepage extends pagebaseclass {
 	@FindBy(xpath = "//a[@data-id='learn-nav' and contains(text(),'Learn')]")
 	public WebElement learnlink;
 
-	public Coffeepage(WebDriver driver, ExtentTest logger) {
-		super(driver, logger);
+	public Coffeepage(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	public Coffeepage clickcoffeelink() {
+		coffeelink.click();
+		return PageFactory.initElements(driver, Coffeepage.class);
 	}
 
 	public Landingpage hoverlinks() {

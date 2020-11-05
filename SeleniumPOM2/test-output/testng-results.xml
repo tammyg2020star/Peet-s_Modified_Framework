@@ -2,22 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-02T15:38:12 IST" name="Default suite" finished-at="2020-11-02T15:38:30 IST" duration-ms="18167">
+  <suite started-at="2020-11-05T15:54:55 IST" name="Default suite" finished-at="2020-11-05T15:55:10 IST" duration-ms="15016">
     <groups>
     </groups>
-    <test started-at="2020-11-02T15:38:12 IST" name="Default test" finished-at="2020-11-02T15:38:30 IST" duration-ms="18167">
+    <test started-at="2020-11-05T15:54:55 IST" name="Default test" finished-at="2020-11-05T15:55:10 IST" duration-ms="15016">
       <class name="Testcases.Logintest">
-        <test-method signature="logintest()[pri:1, instance:Testcases.Logintest@49438269]" started-at="2020-11-02T15:38:12 IST" name="logintest" finished-at="2020-11-02T15:38:26 IST" duration-ms="13995" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.InstantiationException: com.qa.pages.Landingpage]]>
-            </message>
+        <test-method signature="logintest()[pri:1, instance:Testcases.Logintest@367ffa75]" started-at="2020-11-05T15:54:55 IST" name="logintest" finished-at="2020-11-05T15:55:05 IST" duration-ms="10607" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.InstantiationException: com.qa.pages.Landingpage
-at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:134)
-at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
-at com.Base.BaseTestClass.openwebsite(BaseTestClass.java:121)
-at Testcases.Logintest.logintest(Logintest.java:30)
+              <![CDATA[java.lang.NullPointerException
+at Testcases.Logintest.logintest(Logintest.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -46,21 +40,13 @@ at org.testng.TestNG.run(TestNG.java:1034)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.InstantiationException: com.qa.pages.Landingpage
-at java.base/java.lang.Class.newInstance(Class.java:598)
-at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:131)
-... 31 more
-Caused by: java.lang.NoSuchMethodException: com.qa.pages.Landingpage.<init>()
-at java.base/java.lang.Class.getConstructor0(Class.java:3427)
-at java.base/java.lang.Class.newInstance(Class.java:585)
-... 32 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method is-config="true" signature="flushReports()[pri:0, instance:Testcases.Logintest@49438269]" started-at="2020-11-02T15:38:26 IST" name="flushReports" finished-at="2020-11-02T15:38:30 IST" duration-ms="4135" status="PASS">
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:Testcases.Logintest@367ffa75]" started-at="2020-11-05T15:55:05 IST" name="flushReports" finished-at="2020-11-05T15:55:10 IST" duration-ms="4376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->

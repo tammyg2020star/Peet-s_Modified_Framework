@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Thimmegowda\AppData\Local\Temp\testng-eclipse-372477026\testng-customsuite.xml</span>
+                    <span>C:\Users\Thimmegowda\AppData\Local\Temp\testng-eclipse--2063122443\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,11 +130,8 @@
                   <a name="logintest">
                   </a> <!-- logintest -->
                   <span class="method-name">logintest</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.InstantiationException: com.qa.pages.Landingpage
-	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:134)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
-	at com.Base.BaseTestClass.openwebsite(BaseTestClass.java:121)
-	at Testcases.Logintest.logintest(Logintest.java:30)
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Testcases.Logintest.logintest(Logintest.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -163,14 +160,6 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.InstantiationException: com.qa.pages.Landingpage
-	at java.base/java.lang.Class.newInstance(Class.java:598)
-	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:131)
-	... 31 more
-Caused by: java.lang.NoSuchMethodException: com.qa.pages.Landingpage.&lt;init&gt;()
-	at java.base/java.lang.Class.getConstructor0(Class.java:3427)
-	at java.base/java.lang.Class.newInstance(Class.java:585)
-	... 32 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -180,7 +169,7 @@ Caused by: java.lang.NoSuchMethodException: com.qa.pages.Landingpage.&lt;init&gt
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Thimmegowda\AppData\Local\Temp\testng-eclipse-372477026\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Thimmegowda\AppData\Local\Temp\testng-eclipse--2063122443\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -233,12 +222,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logintest')
 data.setCell(0, 2, 'Testcases.Logintest')
-data.setCell(0, 3, 13995);
+data.setCell(0, 3, 10607);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -273,7 +262,7 @@ return data;
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">flushReports</span>
-                <span class="method-start">14001 ms</span>
+                <span class="method-start">10613 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

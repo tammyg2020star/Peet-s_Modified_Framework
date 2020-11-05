@@ -9,15 +9,12 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">18,167</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">15,016</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Testcases.Logintest</td><td><a href="#m0">logintest</a></td><td rowspan="1">1604311692799</td><td rowspan="1">13995</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Testcases.Logintest</td><td><a href="#m0">logintest</a></td><td rowspan="1">1604571895254</td><td rowspan="1">10607</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Testcases.Logintest#logintest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.InstantiationException: com.qa.pages.Landingpage
-	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:134)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
-	at com.Base.BaseTestClass.openwebsite(BaseTestClass.java:121)
-	at Testcases.Logintest.logintest(Logintest.java:30)
+<h2>Default test</h2><h3 id="m0">Testcases.Logintest#logintest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at Testcases.Logintest.logintest(Logintest.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -46,14 +43,6 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.InstantiationException: com.qa.pages.Landingpage
-	at java.base/java.lang.Class.newInstance(Class.java:598)
-	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:131)
-	... 31 more
-Caused by: java.lang.NoSuchMethodException: com.qa.pages.Landingpage.&lt;init&gt;()
-	at java.base/java.lang.Class.getConstructor0(Class.java:3427)
-	at java.base/java.lang.Class.newInstance(Class.java:585)
-	... 32 more
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

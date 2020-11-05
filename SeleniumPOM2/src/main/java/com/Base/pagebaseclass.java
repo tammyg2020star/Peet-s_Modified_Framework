@@ -6,14 +6,11 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
@@ -30,10 +27,7 @@ public class pagebaseclass extends BaseTestClass {
 	public static ExtentTest logger;
 
 	/**************** read file **************/
-	public pagebaseclass(WebDriver driver, ExtentTest logger) {
-		this.driver = driver;
-		this.logger = logger;
-
+	public void readfile() {
 		try {
 
 			prop = new Properties();
@@ -47,31 +41,6 @@ public class pagebaseclass extends BaseTestClass {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}
-
-	/****************** Invoke Browser ***********************/
-	public void invokeBrowser(String browserName) {
-
-		try {
-
-			if (browserName.equalsIgnoreCase("Chrome")) {
-				System.setProperty("webdriver.chrome.driver",
-						"C:\\Users\\Thimmegowda\\Desktop\\selenium jars\\Drivers\\New chrome\\chromedriver.exe");
-				driver = new ChromeDriver();
-			} else if (browserName.equalsIgnoreCase("Mozila")) {
-				System.setProperty("webdriver.gecko.driver",
-						"C:\\Users\\Thimmegowda\\Desktop\\selenium jars\\Drivers\\geckodriver.exe");
-				driver = new FirefoxDriver();
-
-			}
-		} catch (Exception e) {
-			// reportFail(e.getMessage());
-			System.out.println(e.getMessage());
-		}
-
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
 	}
 
 	/****************** Get Page Title ***********************/

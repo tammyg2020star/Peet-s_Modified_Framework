@@ -9,18 +9,22 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.aventstack.extentreports.ExtentTest;
 import com.qa.pages.Searchpage;
 
 public class Topmenuclass extends pagebaseclass {
+	/**
+	 * @param driver
+	 * @param logger
+	 */
+
 	@FindBy(xpath = "//button[@class='btn-icon js-search-toggle' and ancestor::div[@class='header__container container container--small container--full-bleed']]")
 	public WebElement mainsearch;
 
 	@FindBy(xpath = "//*[@id='searchInput']")
 	public WebElement itemsearch;
 
-	public Topmenuclass(WebDriver driver, ExtentTest logger) {
-		super(driver, logger);
+	public Topmenuclass(WebDriver driver) {
+		this.driver = driver;
 	}
 
 	public Searchpage search() {
